@@ -1,0 +1,29 @@
+$TTL 5h
+rouibah.fr.	IN	SOA	imedia.rouibah.fr. root.rouibah.fr. (
+			 86400      ; serial
+                        86400          ; refresh after 6 hours
+                        7200             ; retry after 1 hour
+                        3600000                 ; expire after 1 week
+                        86400 )
+
+
+@	 IN          A       82.234.97.213
+ 
+; Name servers for the domain
+@        IN          NS      imedia.rouibah.fr.
+@        IN          NS      dns1.rouibah.fr.
+@        IN          NS      dns2.rouibah.fr.
+ 
+; Mail server
+@        IN          MX      10  smtp.rouibah.fr.
+ 
+; Nodes in domain
+dns1                IN      A    192.168.1.17
+dns2                IN      A    192.168.1.17
+imedia              IN      A    192.168.1.17
+smtp		    IN      A    82.234.97.213
+imap                IN      A    82.234.97.213
+pop3                IN      A    192.168.1.17
+www		    IN      A	 82.234.97.213
+; Aliases
+blog                IN      CNAME   www

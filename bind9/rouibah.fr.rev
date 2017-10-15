@@ -1,0 +1,20 @@
+
+$TTL    86400
+@       IN      SOA     imedia.rouibah.fr.      root.rouibah.fr. (
+                        86400      ; serial
+                        86400          ; refresh after 6 hours
+                        7200             ; retry after 1 hour
+                        3600000                 ; expire after 1 week
+                        86400 )  ; minimum TTL of 1 day
+
+
+@       IN      NS      imedia.rouibah.fr.
+@       IN      MX      10      smtp.rouibah.fr.
+213     IN      PTR     smtp.rouibah.fr.
+17      IN      PTR     ftp
+17      IN      PTR     imedia
+17      IN      PTR     dns1
+17      IN      PTR     dns2
+17      IN      PTR     dns2
+213     IN      PTR     smtp
+213     IN      PTR     pop3
